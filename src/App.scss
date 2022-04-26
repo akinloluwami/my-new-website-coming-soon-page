@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Densmore";
+  src: url(".././src/fonts/densmore.otf");
+}
+
+.app {
+  background-color: #010203;
+  height: 98vh;
+  width: 100vw;
+  padding: 1vh 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  .top_bar {
+    width: 100%;
+    h1 {
+      font-family: Densmore;
+      font-size: clamp (1.5vw, 2.5vw, 1.5vw);
+      font-weight: 400;
+      margin-left: 1.5rem;
+    }
+  }
+  .main {
+    h1 {
+      font-family: Densmore;
+      font-size: clamp(2.5rem, 5vw, 6rem);
+      font-weight: 400;
+    }
+  }
+  button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .get_in_touch {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #010203;
+    top: -100vh;
+    transition: all 0.5s ease-in-out;
+    &.active {
+      top: 0;
+      transition: all 0.5s ease-in-out;
+    }
+    button {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 100%;
+      margin-top: 2rem;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid #fff;
+      cursor: pointer;
+      color: #fff;
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h3 {
+      font-family: Densmore;
+      font-weight: 400;
+      font-size: clamp(1.5rem, 2.5rem, 5rem);
+    }
+    .links {
+      a {
+        margin: 0 2rem;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: ease 0.3s;
+        &:hover {
+          transition: ease 0.3s;
+          background-color: #fff;
+          color: #010203;
+        }
+      }
+    }
+  }
+}
